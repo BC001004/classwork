@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+</head>
+<body>
+  <script>
+  function changePic(){
+    if ( document.getElementById("pic").getAttribute("src") == "1.jpg"){
+      document.getElementById("pic").setAttribute("src", "2.jpg");
+    }else{
+      document.getElementById("pic").setAttribute("src", "1.jpg");
+    }
+  }
+  window.onload = changePic;
+  </script>
+    <img id = "pic" src = "1.jpg" alt="pictures">
+  <button onclick="changePic()">TRY</button>
+</body>
+</html>
